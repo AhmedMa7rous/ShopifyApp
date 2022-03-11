@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SplashViewController" customModule="ShopifyApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="frontlogscreen" translatesAutoresizingMaskIntoConstraints="NO" id="X8b-3B-xmJ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="269"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="aE3-fl-hE4">
+                                <rect key="frame" x="20" y="313" width="374" height="140"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start selling online with Shopify" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="iBI-2g-F3i">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="QFg-WG-a6a"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The ecommerce platform trusted by over a million businesses worldwide" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="qC5-zD-Yby">
+                                        <rect key="frame" x="0.0" y="70" width="374" height="70"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="M9p-LB-aTx">
+                                <rect key="frame" x="108.5" y="453" width="197.5" height="134"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create your online store" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="DGO-ny-2Te">
+                                        <rect key="frame" x="0.0" y="0.0" width="197.5" height="38"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grow your audience" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="rnZ-4s-U4o">
+                                        <rect key="frame" x="0.0" y="48" width="197.5" height="38"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Manage from anywhere" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="yI9-FT-YYZ">
+                                        <rect key="frame" x="0.0" y="96" width="197.5" height="38"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="9WJ-Gm-ulY">
+                                <rect key="frame" x="63.5" y="453" width="40" height="134"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="store" translatesAutoresizingMaskIntoConstraints="NO" id="mKY-jX-ulP">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="38"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="growAudience" translatesAutoresizingMaskIntoConstraints="NO" id="Lmw-fe-QOh">
+                                        <rect key="frame" x="0.0" y="48" width="40" height="38"/>
+                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="text.badge.checkmark" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="puu-aX-AuJ">
+                                        <rect key="frame" x="0.0" y="96" width="40" height="36"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="Vpm-Bb-EGg"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="sVh-uT-COS">
+                                <rect key="frame" x="20" y="760" width="374" height="92"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pNE-nA-pGs">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="36"/>
+                                        <color key="backgroundColor" red="0.14615517854690552" green="0.37928420305252075" blue="0.2998618483543396" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                        <state key="normal" title="GET STARTED">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="getStartedTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MkS-yu-3ei"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ikN-vM-uU3">
+                                        <rect key="frame" x="0.0" y="56" width="374" height="36"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                        <state key="normal" title="LOG IN">
+                                            <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="logInTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p7L-13-xvb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="sVh-uT-COS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="3hb-D6-3WD"/>
+                            <constraint firstItem="X8b-3B-xmJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5A8-ag-6nl"/>
+                            <constraint firstItem="X8b-3B-xmJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5MY-IW-qF4"/>
+                            <constraint firstItem="puu-aX-AuJ" firstAttribute="centerY" secondItem="yI9-FT-YYZ" secondAttribute="centerY" id="9eK-yO-67s"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sVh-uT-COS" secondAttribute="bottom" constant="10" id="DtI-FM-Se0"/>
+                            <constraint firstAttribute="trailing" secondItem="aE3-fl-hE4" secondAttribute="trailing" constant="20" id="I1w-xN-phw"/>
+                            <constraint firstItem="M9p-LB-aTx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JFK-ZZ-qiR"/>
+                            <constraint firstItem="aE3-fl-hE4" firstAttribute="top" secondItem="X8b-3B-xmJ" secondAttribute="bottom" id="MVE-b3-k7F"/>
+                            <constraint firstItem="M9p-LB-aTx" firstAttribute="top" secondItem="aE3-fl-hE4" secondAttribute="bottom" id="SDb-PU-9E7"/>
+                            <constraint firstItem="aE3-fl-hE4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UdN-2p-W6o"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sVh-uT-COS" secondAttribute="trailing" constant="20" id="WgU-xY-dic"/>
+                            <constraint firstItem="X8b-3B-xmJ" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.3" id="XPa-eA-ddk"/>
+                            <constraint firstItem="aE3-fl-hE4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="acB-R1-AlU"/>
+                            <constraint firstItem="M9p-LB-aTx" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.15" id="alm-1X-Ls5"/>
+                            <constraint firstItem="Lmw-fe-QOh" firstAttribute="centerY" secondItem="rnZ-4s-U4o" secondAttribute="centerY" id="fQ5-a3-2TZ"/>
+                            <constraint firstItem="M9p-LB-aTx" firstAttribute="leading" secondItem="9WJ-Gm-ulY" secondAttribute="trailing" constant="5" id="gqR-vt-omu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="X8b-3B-xmJ" secondAttribute="trailing" id="l4e-Hj-6NL"/>
+                            <constraint firstItem="mKY-jX-ulP" firstAttribute="centerY" secondItem="DGO-ny-2Te" secondAttribute="centerY" id="oSK-GQ-7IU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="X8b-3B-xmJ"/>
+                                <exclude reference="aE3-fl-hE4"/>
+                                <exclude reference="M9p-LB-aTx"/>
+                                <exclude reference="9WJ-Gm-ulY"/>
+                                <exclude reference="sVh-uT-COS"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="X8b-3B-xmJ"/>
+                                <include reference="aE3-fl-hE4"/>
+                                <include reference="M9p-LB-aTx"/>
+                                <include reference="9WJ-Gm-ulY"/>
+                                <include reference="sVh-uT-COS"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="getStartedBtn" destination="pNE-nA-pGs" id="CdI-XQ-Coj"/>
+                        <outlet property="logInBtn" destination="ikN-vM-uU3" id="PHn-uZ-OfT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-519" y="-3"/>
+        </scene>
+        <!--Log Up View Controller-->
+        <scene sceneID="Jjg-lm-rF9">
+            <objects>
+                <viewController storyboardIdentifier="logUp" id="DHe-p3-KWn" customClass="LogUpViewController" customModule="ShopifyApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mmW-gt-x7W">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shopifyImg" translatesAutoresizingMaskIntoConstraints="NO" id="WkY-nc-2a4">
+                                <rect key="frame" x="20" y="44" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="ikt-is-8N7"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shopify" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3cu-Xb-peB">
+                                <rect key="frame" x="50" y="44" width="168" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="s4D-40-Xyp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-BoldItalic" family="Avenir Next" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="w6c-UG-G5p">
+                                <rect key="frame" x="20" y="74" width="374" height="758"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Qwo-jf-liH">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="75.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create a Shopify ID" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="dsO-yO-TSu">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="37.5"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The ecommerce platform made for you" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="bFR-I8-vFJ">
+                                                <rect key="frame" x="0.0" y="37.5" width="374" height="38"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Fxa-ak-Xx3">
+                                        <rect key="frame" x="0.0" y="85.5" width="374" height="75"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="xaN-Gf-Cnj">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="23.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qbn-KD-o6S">
+                                                <rect key="frame" x="0.0" y="28.5" width="374" height="46.5"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="XBr-3s-CUb">
+                                        <rect key="frame" x="0.0" y="170.5" width="374" height="75.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ut2-eO-uJr">
+                                                <rect key="frame" x="0.0" y="0.0" width="177" height="75.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First name" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="nb0-rb-Ifl">
+                                                        <rect key="frame" x="0.0" y="0.0" width="177" height="24"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Azo-2U-bDH">
+                                                        <rect key="frame" x="0.0" y="29" width="177" height="46.5"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="namePhonePad"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="4cR-Bx-QRX">
+                                                <rect key="frame" x="197" y="0.0" width="177" height="75.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last name" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="dke-fd-JPl">
+                                                        <rect key="frame" x="0.0" y="0.0" width="177" height="24"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A8S-Pk-XyF">
+                                                        <rect key="frame" x="0.0" y="29" width="177" height="46.5"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="namePhonePad"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your first and last name as they appear on your government-issued ID." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="JqQ-SQ-0Dr">
+                                        <rect key="frame" x="0.0" y="256" width="374" height="75.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="d6Y-Cm-Zwa">
+                                        <rect key="frame" x="0.0" y="341.5" width="374" height="75"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="2iY-8z-m0t">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="23.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kPU-Uv-xsj">
+                                                <rect key="frame" x="0.0" y="28.5" width="374" height="46.5"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your password must be at least 5 characters, and can't being or end with a space." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="Dh5-R1-exw">
+                                        <rect key="frame" x="0.0" y="426.5" width="374" height="75.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="r1B-gs-w75">
+                                        <rect key="frame" x="0.0" y="512" width="374" height="75.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm password" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="s3b-DF-DlA">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="23"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w59-hR-lh0">
+                                                <rect key="frame" x="0.0" y="28" width="374" height="47.5"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5rB-jE-Y5H">
+                                        <rect key="frame" x="0.0" y="597.5" width="374" height="75"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                        <state key="normal" title="Create Shopify ID">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="6vV-nX-Grc">
+                                        <rect key="frame" x="0.0" y="682.5" width="374" height="75.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8XK-xB-PSl">
+                                                <rect key="frame" x="0.0" y="0.0" width="124.5" height="75.5"/>
+                                                <state key="normal" title="Button"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fcj-1Z-X75">
+                                                <rect key="frame" x="124.5" y="0.0" width="125" height="75.5"/>
+                                                <state key="normal" title="Button"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X27-lx-op5">
+                                                <rect key="frame" x="249.5" y="0.0" width="124.5" height="75.5"/>
+                                                <state key="normal" title="Button"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="ATL-74-A8e">
+                                <rect key="frame" x="20" y="832" width="227" height="20"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have a Shopify ID?" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37X-A1-ny2">
+                                        <rect key="frame" x="0.0" y="0.0" width="185" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="185" id="Y9v-2H-HeQ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="wc9-Z3-tgo">
+                                        <rect key="frame" x="185" y="0.0" width="42" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="42" id="ErK-rg-j9D"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="Log In">
+                                            <color key="titleColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="9ym-N8-vvg"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="WkY-nc-2a4" firstAttribute="leading" secondItem="jNg-W7-JAH" secondAttribute="leading" constant="20" id="3Ie-6g-EIz"/>
+                            <constraint firstItem="WkY-nc-2a4" firstAttribute="height" secondItem="3cu-Xb-peB" secondAttribute="height" id="9xW-gs-SKK"/>
+                            <constraint firstItem="ATL-74-A8e" firstAttribute="leading" secondItem="jNg-W7-JAH" secondAttribute="leading" constant="20" id="Arv-OR-PgG"/>
+                            <constraint firstItem="jNg-W7-JAH" firstAttribute="bottom" secondItem="ATL-74-A8e" secondAttribute="bottom" constant="10" id="Ehj-u2-kGa"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ATL-74-A8e" secondAttribute="trailing" constant="73" id="KXT-uM-JGl"/>
+                            <constraint firstAttribute="trailing" secondItem="w6c-UG-G5p" secondAttribute="trailing" constant="20" id="QS5-Qg-VAA"/>
+                            <constraint firstItem="jNg-W7-JAH" firstAttribute="trailing" secondItem="3cu-Xb-peB" secondAttribute="trailing" constant="196" id="SjC-jn-c6m"/>
+                            <constraint firstItem="WkY-nc-2a4" firstAttribute="centerY" secondItem="3cu-Xb-peB" secondAttribute="centerY" id="ZK3-8m-evd"/>
+                            <constraint firstItem="w6c-UG-G5p" firstAttribute="leading" secondItem="jNg-W7-JAH" secondAttribute="leading" constant="20" id="hZZ-Wa-pmf"/>
+                            <constraint firstItem="ATL-74-A8e" firstAttribute="top" secondItem="w6c-UG-G5p" secondAttribute="bottom" id="icC-17-la5"/>
+                            <constraint firstItem="w6c-UG-G5p" firstAttribute="top" secondItem="WkY-nc-2a4" secondAttribute="bottom" id="jSh-Hv-Kez"/>
+                            <constraint firstItem="WkY-nc-2a4" firstAttribute="top" secondItem="jNg-W7-JAH" secondAttribute="top" id="wTG-YS-QZH"/>
+                            <constraint firstItem="3cu-Xb-peB" firstAttribute="leading" secondItem="WkY-nc-2a4" secondAttribute="trailing" id="zhC-XM-bjk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jNg-W7-JAH"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="WkY-nc-2a4"/>
+                                <exclude reference="3cu-Xb-peB"/>
+                                <exclude reference="w6c-UG-G5p"/>
+                                <exclude reference="ATL-74-A8e"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="WkY-nc-2a4"/>
+                                <include reference="3cu-Xb-peB"/>
+                                <include reference="w6c-UG-G5p"/>
+                                <include reference="ATL-74-A8e"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="h9H-LU-GyC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fQJ-bL-yU6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="440.57971014492756" y="-319.41964285714283"/>
+        </scene>
+        <!--Log In View Controller-->
+        <scene sceneID="Xq6-Hx-rZi">
+            <objects>
+                <viewController storyboardIdentifier="logIn" id="8J8-ZF-Cbi" customClass="LogInViewController" customModule="ShopifyApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eP5-T7-1BP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="XTq-5a-jtp"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sgv-jQ-dFr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="441" y="390"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="frontlogscreen" width="240" height="198.5"/>
+        <image name="growAudience" width="75" height="75"/>
+        <image name="shopifyImg" width="170.5" height="170.5"/>
+        <image name="store" width="186.5" height="186.5"/>
+        <image name="text.badge.checkmark" catalog="system" width="64" height="54"/>
+    </resources>
+</document>
