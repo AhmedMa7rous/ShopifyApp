@@ -15,6 +15,13 @@
 		B8AD32D227DA70310032E51B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8AD32D027DA70310032E51B /* LaunchScreen.storyboard */; };
 		B8AD32DB27DAB64D0032E51B /* LogUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AD32DA27DAB64D0032E51B /* LogUpViewController.swift */; };
 		B8AD32DD27DAB6610032E51B /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AD32DC27DAB6610032E51B /* LogInViewController.swift */; };
+		EEB6726127DE243500DC154C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB6726027DE243500DC154C /* HomeViewController.swift */; };
+		EEB6726327DE246F00DC154C /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB6726227DE246F00DC154C /* CategoryViewController.swift */; };
+		EEB6726627DE24A200DC154C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB6726527DE24A200DC154C /* ProfileViewController.swift */; };
+		EEB6726827DE29DF00DC154C /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB6726727DE29DF00DC154C /* CartViewController.swift */; };
+		EEB6726C27DE2F7500DC154C /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB6726B27DE2F7500DC154C /* SearchTableViewController.swift */; };
+		EEB6726E27DE2FC900DC154C /* FavoriteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB6726D27DE2FC900DC154C /* FavoriteTableViewController.swift */; };
+		EEB6727027DE311700DC154C /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB6726F27DE311700DC154C /* SettingsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +35,13 @@
 		B8AD32D327DA70310032E51B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8AD32DA27DAB64D0032E51B /* LogUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogUpViewController.swift; sourceTree = "<group>"; };
 		B8AD32DC27DAB6610032E51B /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		EEB6726027DE243500DC154C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		EEB6726227DE246F00DC154C /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		EEB6726527DE24A200DC154C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		EEB6726727DE29DF00DC154C /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		EEB6726B27DE2F7500DC154C /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
+		EEB6726D27DE2FC900DC154C /* FavoriteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewController.swift; sourceTree = "<group>"; };
+		EEB6726F27DE311700DC154C /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +91,13 @@
 				B8AD32C927DA70300032E51B /* SplashViewController.swift */,
 				B8AD32DA27DAB64D0032E51B /* LogUpViewController.swift */,
 				B8AD32DC27DAB6610032E51B /* LogInViewController.swift */,
+				EEB6726027DE243500DC154C /* HomeViewController.swift */,
+				EEB6726227DE246F00DC154C /* CategoryViewController.swift */,
+				EEB6726527DE24A200DC154C /* ProfileViewController.swift */,
+				EEB6726727DE29DF00DC154C /* CartViewController.swift */,
+				EEB6726B27DE2F7500DC154C /* SearchTableViewController.swift */,
+				EEB6726D27DE2FC900DC154C /* FavoriteTableViewController.swift */,
+				EEB6726F27DE311700DC154C /* SettingsTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -154,9 +175,16 @@
 			files = (
 				B8AD32CA27DA70300032E51B /* SplashViewController.swift in Sources */,
 				B8AD32C627DA70300032E51B /* AppDelegate.swift in Sources */,
+				EEB6726327DE246F00DC154C /* CategoryViewController.swift in Sources */,
 				B8AD32DB27DAB64D0032E51B /* LogUpViewController.swift in Sources */,
+				EEB6726E27DE2FC900DC154C /* FavoriteTableViewController.swift in Sources */,
 				B8AD32DD27DAB6610032E51B /* LogInViewController.swift in Sources */,
 				B8AD32C827DA70300032E51B /* SceneDelegate.swift in Sources */,
+				EEB6726627DE24A200DC154C /* ProfileViewController.swift in Sources */,
+				EEB6727027DE311700DC154C /* SettingsTableViewController.swift in Sources */,
+				EEB6726C27DE2F7500DC154C /* SearchTableViewController.swift in Sources */,
+				EEB6726827DE29DF00DC154C /* CartViewController.swift in Sources */,
+				EEB6726127DE243500DC154C /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
