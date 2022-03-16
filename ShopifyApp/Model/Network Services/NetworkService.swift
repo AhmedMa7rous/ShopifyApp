@@ -7,7 +7,6 @@
 //
 
 import Foundation
-<<<<<<< HEAD
 
 class NetworkService {
     
@@ -54,5 +53,3 @@ class NetworkService {
     
     
 }
-=======
->>>>>>> parent of ead8ccf (Merge pull request #1 from ma7ros/Osama)

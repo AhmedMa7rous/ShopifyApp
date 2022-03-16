@@ -7,10 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-<<<<<<< HEAD
 		0FFD469AAEEA84C08198ECE9 /* Pods_ShopifyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5E5A1D90853EBF0778065C6 /* Pods_ShopifyApp.framework */; };
-=======
->>>>>>> parent of ead8ccf (Merge pull request #1 from ma7ros/Osama)
 		B8AD32C627DA70300032E51B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AD32C527DA70300032E51B /* AppDelegate.swift */; };
 		B8AD32C827DA70300032E51B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AD32C727DA70300032E51B /* SceneDelegate.swift */; };
 		B8AD32CA27DA70300032E51B /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AD32C927DA70300032E51B /* SplashViewController.swift */; };
@@ -19,17 +16,11 @@
 		B8AD32D227DA70310032E51B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8AD32D027DA70310032E51B /* LaunchScreen.storyboard */; };
 		B8AD32DB27DAB64D0032E51B /* LogUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AD32DA27DAB64D0032E51B /* LogUpViewController.swift */; };
 		B8AD32DD27DAB6610032E51B /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AD32DC27DAB6610032E51B /* LogInViewController.swift */; };
-<<<<<<< HEAD
 		D69F9AEB27DF9CF100829B41 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69F9AEA27DF9CF100829B41 /* HomeViewModel.swift */; };
 		D6A408CE27E10B9000CFFAF9 /* BrandsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A408CD27E10B9000CFFAF9 /* BrandsCollectionViewCell.swift */; };
 		D6A408D027E10D3000CFFAF9 /* BrandViewModelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A408CF27E10D3000CFFAF9 /* BrandViewModelCell.swift */; };
 		D6A408D227E14B9000CFFAF9 /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A408D127E14B9000CFFAF9 /* ProductsViewController.swift */; };
 		D6B92F8F27E2351D0022D4D1 /* SalesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B92F8E27E2351D0022D4D1 /* SalesCollectionViewCell.swift */; };
-=======
-		EBD2A425A76C8C1CEBAE9659 /* libPods-ShopifyApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03CF34130EB81A2134D70A59 /* libPods-ShopifyApp.a */; };
-		EE71614627E0E649007189C0 /* PoductsImagesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE71614427E0E649007189C0 /* PoductsImagesCollectionViewCell.swift */; };
-		EE71614727E0E649007189C0 /* PoductsImagesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE71614527E0E649007189C0 /* PoductsImagesCollectionViewCell.xib */; };
->>>>>>> parent of ead8ccf (Merge pull request #1 from ma7ros/Osama)
 		EEB6726127DE243500DC154C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB6726027DE243500DC154C /* HomeViewController.swift */; };
 		EEB6726327DE246F00DC154C /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB6726227DE246F00DC154C /* CategoryViewController.swift */; };
 		EEB6726627DE24A200DC154C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB6726527DE24A200DC154C /* ProfileViewController.swift */; };
@@ -52,10 +43,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-<<<<<<< HEAD
-=======
-		03CF34130EB81A2134D70A59 /* libPods-ShopifyApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ShopifyApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
->>>>>>> parent of ead8ccf (Merge pull request #1 from ma7ros/Osama)
 		A3348570C694291AB702E204 /* Pods-ShopifyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShopifyApp.debug.xcconfig"; path = "Target Support Files/Pods-ShopifyApp/Pods-ShopifyApp.debug.xcconfig"; sourceTree = "<group>"; };
 		A5E5A1D90853EBF0778065C6 /* Pods_ShopifyApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShopifyApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8AD32C227DA70300032E51B /* ShopifyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShopifyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,14 +55,11 @@
 		B8AD32D327DA70310032E51B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8AD32DA27DAB64D0032E51B /* LogUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogUpViewController.swift; sourceTree = "<group>"; };
 		B8AD32DC27DAB6610032E51B /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
-<<<<<<< HEAD
 		D69F9AEA27DF9CF100829B41 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		D6A408CD27E10B9000CFFAF9 /* BrandsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandsCollectionViewCell.swift; sourceTree = "<group>"; };
 		D6A408CF27E10D3000CFFAF9 /* BrandViewModelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandViewModelCell.swift; sourceTree = "<group>"; };
 		D6A408D127E14B9000CFFAF9 /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
 		D6B92F8E27E2351D0022D4D1 /* SalesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesCollectionViewCell.swift; sourceTree = "<group>"; };
-=======
->>>>>>> parent of ead8ccf (Merge pull request #1 from ma7ros/Osama)
 		D7D152988E96CF0D917050DA /* Pods-ShopifyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShopifyApp.release.xcconfig"; path = "Target Support Files/Pods-ShopifyApp/Pods-ShopifyApp.release.xcconfig"; sourceTree = "<group>"; };
 		EEB6726027DE243500DC154C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		EEB6726227DE246F00DC154C /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
@@ -103,11 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-<<<<<<< HEAD
 				0FFD469AAEEA84C08198ECE9 /* Pods_ShopifyApp.framework in Frameworks */,
-=======
-				EBD2A425A76C8C1CEBAE9659 /* libPods-ShopifyApp.a in Frameworks */,
->>>>>>> parent of ead8ccf (Merge pull request #1 from ma7ros/Osama)
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,14 +147,7 @@
 				EEB6726B27DE2F7500DC154C /* SearchTableViewController.swift */,
 				EEB6726D27DE2FC900DC154C /* FavoriteTableViewController.swift */,
 				EEB6726F27DE311700DC154C /* SettingsTableViewController.swift */,
-<<<<<<< HEAD
 				D6A408D127E14B9000CFFAF9 /* ProductsViewController.swift */,
-=======
-				EEDD6D0727E0DC570050994B /* ProductDetailsViewController.swift */,
-				EEFC228227E15CF800ADD598 /* Product Image Cell */,
-				EEFC228027E1591700ADD598 /* BrandProductsViewController.swift */,
-				EEFC228327E1628D00ADD598 /* Brand Products Cell */,
->>>>>>> parent of ead8ccf (Merge pull request #1 from ma7ros/Osama)
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -218,16 +191,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
-=======
-		EE0DC74A27DF72FD0072EACC /* View Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "View Model";
-			sourceTree = "<group>";
-		};
->>>>>>> parent of ead8ccf (Merge pull request #1 from ma7ros/Osama)
 		EEB9A8F127DF695400954F9E /* Constnats */ = {
 			isa = PBXGroup;
 			children = (
@@ -265,11 +228,7 @@
 		F4E6271C578F6D8683C6D94A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
 				A5E5A1D90853EBF0778065C6 /* Pods_ShopifyApp.framework */,
-=======
-				03CF34130EB81A2134D70A59 /* libPods-ShopifyApp.a */,
->>>>>>> parent of ead8ccf (Merge pull request #1 from ma7ros/Osama)
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -285,10 +244,7 @@
 				B8AD32BE27DA70300032E51B /* Sources */,
 				B8AD32BF27DA70300032E51B /* Frameworks */,
 				B8AD32C027DA70300032E51B /* Resources */,
-<<<<<<< HEAD
 				34AF3AC35F4531A1475364B0 /* [CP] Embed Pods Frameworks */,
-=======
->>>>>>> parent of ead8ccf (Merge pull request #1 from ma7ros/Osama)
 			);
 			buildRules = (
 			);
@@ -363,7 +319,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ShopifyApp/Pods-ShopifyApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-<<<<<<< HEAD
 		A0E2A49C2D0B9045D00D8763 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -386,8 +341,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-=======
->>>>>>> parent of ead8ccf (Merge pull request #1 from ma7ros/Osama)
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -417,11 +370,7 @@
 				EEB9A90727DF710200954F9E /* CustomCollectionsKey.swift in Sources */,
 				B8AD32DD27DAB6610032E51B /* LogInViewController.swift in Sources */,
 				B8AD32C827DA70300032E51B /* SceneDelegate.swift in Sources */,
-<<<<<<< HEAD
 				EEB9A8F027DF694400954F9E /* UrlConstants.swift in Sources */,
-=======
-				EEB9A8F027DF694400954F9E /* URL.swift in Sources */,
->>>>>>> parent of ead8ccf (Merge pull request #1 from ma7ros/Osama)
 				EEB6726627DE24A200DC154C /* ProfileViewController.swift in Sources */,
 				EEB9A8FE27DF70C700954F9E /* Images.swift in Sources */,
 				EEB6727027DE311700DC154C /* SettingsTableViewController.swift in Sources */,
