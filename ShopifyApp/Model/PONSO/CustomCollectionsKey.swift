@@ -1,6 +1,6 @@
 
 import Foundation
-struct SmartCollectionsKey : Codable {
+struct CustomCollectionsKey : Codable {
 	let smart_collections : [Smart_collections]?
 
 	enum CodingKeys: String, CodingKey {
