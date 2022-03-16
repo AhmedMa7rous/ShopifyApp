@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FD8CC281475C541B72CD8B380A38D21A"
-               BuildableName = "libPods-ShopifyApp.a"
+               BuildableName = "Pods_ShopifyApp.framework"
                BlueprintName = "Pods-ShopifyApp"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
