@@ -10,21 +10,52 @@ import UIKit
 
 class BrandProductsViewController: UIViewController {
 
+    /*============================================*/
+        //MARK: Outlet Connections
+    
+    @IBOutlet weak var brandProducts: UICollectionView!
+    
+    
+    
+    /*============================================*/
+       
     override func viewDidLoad() {
         super.viewDidLoad()
+        brandProducts.register(UINib(nibName: "BrandProductsCollectionViewCell", bundle: .main), forCellWithReuseIdentifier: "brandProductsCell")
 
-        // Do any additional setup after loading the view.
     }
     
 
-    /*
-    // MARK: - Navigation
+}
+extension BrandProductsViewController : UICollectionViewDelegate , UICollectionViewDataSource , UICollectionViewDelegateFlowLayout
+{
+    
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        if collectionView == self.brandProducts
+            {
+                return 10
+            }
+            else{return 0}
+        }
+
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+            if collectionView == self.brandProducts
+            {
+                    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "brandProductsCell", for: indexPath) as! BrandProductsCollectionViewCell
+                    return cell
+            }
+            else{
+                    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "brandProductsCell", for: indexPath) as! BrandProductsCollectionViewCell
+                    return cell
+                }
+        }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize (width: (brandProducts.bounds.width)/2.5, height: (brandProducts.bounds.height)/3)
     }
-    */
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+            return UIEdgeInsets(top: 10 , left: 10, bottom: 10, right: 10)
+        }
 
 }

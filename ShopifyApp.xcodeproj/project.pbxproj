@@ -39,6 +39,8 @@
 		EEB9A90927DF71E900954F9E /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB9A90827DF71E900954F9E /* NetworkService.swift */; };
 		EEDD6D0827E0DC570050994B /* ProductDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDD6D0727E0DC570050994B /* ProductDetailsViewController.swift */; };
 		EEFC228127E1591700ADD598 /* BrandProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFC228027E1591700ADD598 /* BrandProductsViewController.swift */; };
+		EEFC228827E162CF00ADD598 /* BrandProductsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFC228627E162CF00ADD598 /* BrandProductsCollectionViewCell.swift */; };
+		EEFC228927E162CF00ADD598 /* BrandProductsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEFC228727E162CF00ADD598 /* BrandProductsCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +80,8 @@
 		EEB9A90827DF71E900954F9E /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		EEDD6D0727E0DC570050994B /* ProductDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewController.swift; sourceTree = "<group>"; };
 		EEFC228027E1591700ADD598 /* BrandProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandProductsViewController.swift; sourceTree = "<group>"; };
+		EEFC228627E162CF00ADD598 /* BrandProductsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandProductsCollectionViewCell.swift; sourceTree = "<group>"; };
+		EEFC228727E162CF00ADD598 /* BrandProductsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BrandProductsCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +152,7 @@
 				EEDD6D0727E0DC570050994B /* ProductDetailsViewController.swift */,
 				EEFC228227E15CF800ADD598 /* Product Image Cell */,
 				EEFC228027E1591700ADD598 /* BrandProductsViewController.swift */,
+				EEFC228327E1628D00ADD598 /* Brand Products Cell */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -222,6 +227,15 @@
 			path = "Product Image Cell";
 			sourceTree = "<group>";
 		};
+		EEFC228327E1628D00ADD598 /* Brand Products Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EEFC228627E162CF00ADD598 /* BrandProductsCollectionViewCell.swift */,
+				EEFC228727E162CF00ADD598 /* BrandProductsCollectionViewCell.xib */,
+			);
+			path = "Brand Products Cell";
+			sourceTree = "<group>";
+		};
 		F4E6271C578F6D8683C6D94A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -292,6 +306,7 @@
 				B8AD32D227DA70310032E51B /* LaunchScreen.storyboard in Resources */,
 				B8AD32CF27DA70310032E51B /* Assets.xcassets in Resources */,
 				B8AD32CD27DA70300032E51B /* Main.storyboard in Resources */,
+				EEFC228927E162CF00ADD598 /* BrandProductsCollectionViewCell.xib in Resources */,
 				EE71614727E0E649007189C0 /* PoductsImagesCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,6 +369,7 @@
 				EEB6727027DE311700DC154C /* SettingsTableViewController.swift in Sources */,
 				EEB6726C27DE2F7500DC154C /* SearchTableViewController.swift in Sources */,
 				EEB6726827DE29DF00DC154C /* CartViewController.swift in Sources */,
+				EEFC228827E162CF00ADD598 /* BrandProductsCollectionViewCell.swift in Sources */,
 				EEB6726127DE243500DC154C /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
