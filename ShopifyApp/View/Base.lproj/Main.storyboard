@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gp7-4V-4JU">
+
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -568,11 +570,159 @@
                         <segue destination="18V-eV-62w" kind="show" identifier="goToCartFromHomeSegue" id="EK2-q4-06c"/>
                         <segue destination="MCd-5J-Xh5" kind="show" identifier="goToSearchFromHomeSegue" id="5yT-ZT-RGl"/>
                         <segue destination="LbJ-Wz-e3G" kind="show" identifier="showFavoriteFromHomeSegue" id="CJN-Ih-KNz"/>
+                        <segue destination="5N5-oi-udY" kind="show" identifier="showCategoryProducts" id="fMg-Bp-Z9d"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7LW-FK-Fu9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4461" y="-1499"/>
+        </scene>
+        <!--Product Name-->
+        <scene sceneID="Bhf-s6-ZTU">
+            <objects>
+                <viewController id="dtn-dl-0D8" customClass="ProductDetailsViewController" customModule="ShopifyApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Isx-7P-2Ob">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="sgO-V6-VwO">
+                                <rect key="frame" x="20" y="140" width="374" height="203"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.98431372549999996" green="0.96862745100000003" blue="0.90307873149999995" alpha="0.70999999999999996" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ypz-du-smz">
+                                    <size key="itemSize" width="359" height="203"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="0e0-Vq-VrA">
+                                        <rect key="frame" x="0.0" y="0.0" width="359" height="203"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="8tN-pr-gSn">
+                                            <rect key="frame" x="0.0" y="0.0" width="359" height="203"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="359" height="203"/>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="dtn-dl-0D8" id="Qpp-Rt-OPr"/>
+                                    <outlet property="delegate" destination="dtn-dl-0D8" id="D6i-eS-trb"/>
+                                </connections>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Product name + small info" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KQ1-qk-4be">
+                                <rect key="frame" x="20" y="374" width="374" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u2B-Pv-JwN">
+                                <rect key="frame" x="20" y="451" width="160" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wW2-Me-3YP">
+                                <rect key="frame" x="257" y="458" width="137" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" translatesAutoresizingMaskIntoConstraints="NO" id="yUs-Xt-at9">
+                                <rect key="frame" x="20" y="351" width="359" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="pageIndicatorTintColor" red="0.59607843140000005" green="0.79215686269999996" blue="0.83529411760000005" alpha="0.70999999999999996" colorSpace="calibratedRGB"/>
+                                <color key="currentPageIndicatorTintColor" cyan="0.93090986389999997" magenta="0.56560905610000001" yellow="0.19007885460000001" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                            </pageControl>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="icm-Mq-ZSZ">
+                                <rect key="frame" x="20" y="593" width="359" height="220"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Decription" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9nW-LN-41Z">
+                                <rect key="frame" x="30" y="539" width="162" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9tR-4E-Wtj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Product Name" id="HKD-cC-kuz">
+                        <rightBarButtonItems>
+                            <barButtonItem title="Item" image="heart.circle.fill" catalog="system" id="qtr-uK-cZB"/>
+                            <barButtonItem title="Item" image="cart.badge.plus" catalog="system" id="CvY-wc-Z8D"/>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imagesCollectionView" destination="sgO-V6-VwO" id="zmM-rQ-MzO"/>
+                        <outlet property="productDesc" destination="icm-Mq-ZSZ" id="HQd-ho-9ME"/>
+                        <outlet property="productInfo" destination="KQ1-qk-4be" id="ihX-9r-tIN"/>
+                        <outlet property="productPageControl" destination="yUs-Xt-at9" id="StJ-1P-uMF"/>
+                        <outlet property="productPrice" destination="u2B-Pv-JwN" id="vcz-Rn-X7D"/>
+                        <outlet property="productRating" destination="wW2-Me-3YP" id="Mz2-k0-8Et"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TOY-45-fEW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5262.3188405797109" y="-1858.2589285714284"/>
+        </scene>
+        <!--Brand Name-->
+        <scene sceneID="Ne2-VN-32p">
+            <objects>
+                <viewController id="5N5-oi-udY" customClass="BrandProductsViewController" customModule="ShopifyApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lcG-Ud-uPh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="aPs-oy-8la">
+                                <rect key="frame" x="20" y="140" width="374" height="495"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="eRK-WB-1eC">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="675-GL-XOF">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="rH7-VE-eTf">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="5N5-oi-udY" id="wVJ-gJ-FBD"/>
+                                    <outlet property="delegate" destination="5N5-oi-udY" id="IxO-0e-qlM"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zzm-Aq-XrZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Brand Name" id="KUL-RB-XzZ"/>
+                    <connections>
+                        <outlet property="brandProducts" destination="aPs-oy-8la" id="JKF-SW-uwm"/>
+                        <segue destination="dtn-dl-0D8" kind="show" identifier="showProductDetailsFromBrands" id="Ooh-ka-pYv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="akp-Uh-RLf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2917.3913043478265" y="-2239.2857142857142"/>
         </scene>
         <!--Favorite-->
         <scene sceneID="kZt-vl-JK8">
@@ -678,6 +828,7 @@
                         <segue destination="18V-eV-62w" kind="show" identifier="goToCartFromCategorySegue" id="LBa-OL-hqg"/>
                         <segue destination="MCd-5J-Xh5" kind="show" identifier="goToSearchFromCategorySegue" id="yCZ-zw-9dX"/>
                         <segue destination="LbJ-Wz-e3G" kind="show" identifier="showFavoriteFromCategorySegue" id="Zcz-OJ-iRE"/>
+                        <segue destination="dtn-dl-0D8" kind="show" identifier="showProductDetails" id="mUo-7U-M2v"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Kd-Tz-9os" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -874,18 +1025,30 @@
         <segue reference="5yT-ZT-RGl"/>
         <segue reference="EK2-q4-06c"/>
         <segue reference="CJN-Ih-KNz"/>
+
+        <segue reference="Ooh-ka-pYv"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="cart" catalog="system" width="128" height="102"/>
+        <image name="cart.badge.plus" catalog="system" width="128" height="106"/>
         <image name="cube.fill" catalog="system" width="128" height="124"/>
         <image name="frontlogscreen" width="240" height="198.5"/>
         <image name="gear" catalog="system" width="128" height="119"/>
         <image name="growAudience" width="75" height="75"/>
         <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="heart.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="homekit" catalog="system" width="128" height="106"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="person.crop.circle" catalog="system" width="128" height="121"/>
         <image name="shopifyImg" width="170.5" height="170.5"/>
         <image name="store" width="186.5" height="186.5"/>
         <image name="text.badge.checkmark" catalog="system" width="128" height="109"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+
     </resources>
 </document>
