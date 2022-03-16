@@ -42,7 +42,7 @@ class ProductDetailsViewController: UIViewController
 
    
     func updateUi (){
-        self.navigationItem.title = "ADICOLOR BACKPACK"
+        self.navigationItem.title = " ADICOLOR BACKPACK "
         productPrice.text = "EGP 749.00"
         productDesc.text = "When it comes to choosing the perfect bag for a busy day, space is key. Throw on this adidas backpack, and carry all your gear with ease. A roomy main compartment and front and side pockets let you keep your essentials organised and accessible. Plus, it's decked out in Trefoil logo style, so you can show off your adidas love on all your daily adventures. This product is made with Primegreen, a series of high-performance recycled materials"
         productInfo.text = " ADICOLOR BACKPACK SHADOW NAVY"
@@ -50,7 +50,7 @@ class ProductDetailsViewController: UIViewController
 
 }
 
-extension ProductDetailsViewController: UICollectionViewDataSource , UICollectionViewDelegate , UICollectionViewDelegateFlowLayout
+extension ProductDetailsViewController: UICollectionViewDataSource , UICollectionViewDelegate , UICollectionViewDelegateFlowLayout , UIScrollViewDelegate
 {
     
     
@@ -71,8 +71,6 @@ extension ProductDetailsViewController: UICollectionViewDataSource , UICollectio
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "imageCell", for: indexPath) as! PoductsImagesCollectionViewCell
             collectionView.isPagingEnabled = true
             cell.productImage.image = UIImage.init(named: arrOfImages[indexPath.row])
-            productPageControl.currentPage = indexPath.row
-//            print(indexPath.row)
         return cell
         }
         else
@@ -85,6 +83,19 @@ extension ProductDetailsViewController: UICollectionViewDataSource , UICollectio
         return CGSize (width: collectionView.bounds.size.width , height: collectionView.bounds.size.height)
     }
     
-    
+//    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+//        productPageControl.currentPage = indexPath.row
+//    }
+//
+//    func collectionView(_ collectionView: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+//        if productPageControl.currentPage == indexPath.row {
+//            productPageControl.currentPage = collectionView.indexPath(for: collectionView.visibleCells.first!)!.row-1
+//        }
+//    }
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        
+                let pageWidth = self.imagesCollectionView.frame.size.width
+        productPageControl.currentPage = Int(self.imagesCollectionView.contentOffset.x / pageWidth)
+            }
     
 }

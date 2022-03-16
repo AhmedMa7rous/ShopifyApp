@@ -146,8 +146,7 @@
 				EEB6726D27DE2FC900DC154C /* FavoriteTableViewController.swift */,
 				EEB6726F27DE311700DC154C /* SettingsTableViewController.swift */,
 				EEDD6D0727E0DC570050994B /* ProductDetailsViewController.swift */,
-				EE71614427E0E649007189C0 /* PoductsImagesCollectionViewCell.swift */,
-				EE71614527E0E649007189C0 /* PoductsImagesCollectionViewCell.xib */,
+				EEFC228227E15CF800ADD598 /* Product Image Cell */,
 				EEFC228027E1591700ADD598 /* BrandProductsViewController.swift */,
 			);
 			path = Controller;
@@ -212,6 +211,15 @@
 				EEB9A90827DF71E900954F9E /* NetworkService.swift */,
 			);
 			path = "Network Services";
+			sourceTree = "<group>";
+		};
+		EEFC228227E15CF800ADD598 /* Product Image Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EE71614427E0E649007189C0 /* PoductsImagesCollectionViewCell.swift */,
+				EE71614527E0E649007189C0 /* PoductsImagesCollectionViewCell.xib */,
+			);
+			path = "Product Image Cell";
 			sourceTree = "<group>";
 		};
 		F4E6271C578F6D8683C6D94A /* Frameworks */ = {
