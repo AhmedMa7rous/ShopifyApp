@@ -717,6 +717,7 @@
                     <navigationItem key="navigationItem" title="Brand Name" id="KUL-RB-XzZ"/>
                     <connections>
                         <outlet property="brandProducts" destination="aPs-oy-8la" id="JKF-SW-uwm"/>
+                        <segue destination="dtn-dl-0D8" kind="show" identifier="showProductDetailsFromBrands" id="Ooh-ka-pYv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="akp-Uh-RLf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1018,6 +1019,7 @@
         <segue reference="5yT-ZT-RGl"/>
         <segue reference="EK2-q4-06c"/>
         <segue reference="CJN-Ih-KNz"/>
+        <segue reference="Ooh-ka-pYv"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="cart" catalog="system" width="128" height="102"/>
