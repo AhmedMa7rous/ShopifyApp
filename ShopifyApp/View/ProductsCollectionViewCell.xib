@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="productCell" id="gTV-IL-0wX" customClass="ProductsCollectionViewCell" customModule="ShopifyApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="135" height="135"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="135" height="135"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BCN-kg-aiS">
+                        <rect key="frame" x="0.0" y="0.0" width="135" height="135"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FCT-ic-wV9">
+                        <rect key="frame" x="0.0" y="105" width="135" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="sYJ-Wl-lwJ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="BCN-kg-aiS" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="0Df-si-mgC"/>
+                <constraint firstAttribute="bottom" secondItem="BCN-kg-aiS" secondAttribute="bottom" id="F0H-5D-TcX"/>
+                <constraint firstItem="BCN-kg-aiS" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="PHy-JS-oza"/>
+                <constraint firstItem="FCT-ic-wV9" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="QxE-VF-vag"/>
+                <constraint firstAttribute="trailing" secondItem="FCT-ic-wV9" secondAttribute="trailing" id="T0j-Wg-o5F"/>
+                <constraint firstAttribute="trailing" secondItem="BCN-kg-aiS" secondAttribute="trailing" id="a2I-cu-CSJ"/>
+                <constraint firstAttribute="bottom" secondItem="FCT-ic-wV9" secondAttribute="bottom" id="vhc-P5-GmZ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="135" height="135"/>
+            <connections>
+                <outlet property="productImage" destination="BCN-kg-aiS" id="d3g-0P-TRj"/>
+                <outlet property="produvtName" destination="FCT-ic-wV9" id="rd8-8R-sp4"/>
+            </connections>
+            <point key="canvasLocation" x="193.47826086956522" y="124.88839285714285"/>
+        </collectionViewCell>
+    </objects>
+</document>
