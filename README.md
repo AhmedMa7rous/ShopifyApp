@@ -39,7 +39,7 @@ Or you can simply download the code from here    https://github.com/ma7ros/Shopi
 
      git clone https://github.com/ma7ros/ShopifyApp.git   
 
-Or you can simply download the code from here    https://github.com/ma7ros/ShopifyApp/archive/refs/heads/main.zip 
+Or you can simply download the code from here    https://github.com/ma7ros/ShopifyApp/archive/refs/heads/nibFiles.zip 
   
 <li> Open the project on your Xcode  
 <li> Connect your device via (usb or wifi) or start a simulator   
