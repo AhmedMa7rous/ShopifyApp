@@ -10,6 +10,10 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    var salesPhotos = ["sale1","sale2","sale3","sale4"]
+    var viewModel = HomeViewModel()
+    var SelectedBrand:String?
+    let indicator = UIActivityIndicatorView(style: .large)
     /*============================================*/
         //MARK: Outlet Connections
 
@@ -41,47 +45,123 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.networkIndicator()
         // Do any additional setup after loading the view.
-    }
-    /*
-    // MARK: - Navigation
+              initViewModel()
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
     }
-    */
+    
+    func initViewModel(){
+   
+           viewModel.showErrorAlertClosure = {  [weak self] () in
+               DispatchQueue.main.async {
+                   if let message = self?.viewModel.alertMessage {
+                       self?.showAlert( message )
+                   }
+               }
+           }
+   
+           viewModel.reloadTableViewClosure = { [weak self] () in
+               DispatchQueue.main.async {
+                   self?.brandsCollectionView.reloadData()
+                   self!.indicator.stopAnimating()
+               }
+           }
+   
+           viewModel.fetchBrandDatafromAPI()
+       }
+   
+       func showAlert( _ message: String ) {
+           let alert = UIAlertController(title: "Alert", message: message, preferredStyle: .alert)
+           alert.addAction( UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+           self.present(alert, animated: true, completion: nil)
+       }
+        func networkIndicator()
+        {
+        indicator.center = self.view.center
+        self.view.addSubview(indicator)
+        indicator.startAnimating()
+        }
+    
+    
 
 }
-extension  HomeViewController : UICollectionViewDelegate , UICollectionViewDataSource
+/*===============================================================*/
+    //MARK: CollectionView Functions
+extension  HomeViewController : UICollectionViewDelegate , UICollectionViewDataSource , UICollectionViewDelegateFlowLayout
 {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        switch (collectionView)
-        {
-        case saleCollectionView :
-            return 1
-        case brandsCollectionView :
-            return 1
-        default :
-            return 1
+            switch collectionView {
+            case brandsCollectionView:
+                return viewModel.numberOfCells
+        default:
+                return salesPhotos.count
+            }
+        }
+    
+        func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    
+                    switch collectionView {
+                    case brandsCollectionView:
+                        let brandCell = collectionView.dequeueReusableCell(withReuseIdentifier: "brandsCell", for: indexPath) as! BrandsCollectionViewCell
+                        let cellVM = viewModel.getCellViewModel( at: indexPath )
+                        brandCell.BrandListCellViewModel = cellVM
+                        brandCell.updateCellUi(forCell: brandCell)
+                           return brandCell
+    
+    
+                    default:
+                      let saleCell = collectionView.dequeueReusableCell(withReuseIdentifier: "salesCell", for: indexPath) as! SalesCollectionViewCell
+                        saleCell.SaleImage.image = UIImage(named: salesPhotos[indexPath.row])
+                        saleCell.updateCellUi(forCell: saleCell)
+                        return saleCell
+                    }
+        }
+    
+    
+    
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        switch collectionView {
+        case brandsCollectionView:
+            let padding: CGFloat =  35
+            let collectionViewSize = collectionView.frame.size.width - padding
+            return CGSize(width: collectionViewSize/2, height: 180)
+        default:
+            let padding: CGFloat =  20
+            let collectionViewWidthSize = collectionView.frame.size.width - padding
+            let collectionViewHeightSize = collectionView.frame.size.height - padding
+            return CGSize(width: collectionViewWidthSize, height: collectionViewHeightSize)
+        }
+        
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        cell.alpha = 0.2
+        UIView.animate(withDuration: 0.8) {
+        cell.alpha = 1
         }
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        switch (collectionView)
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if collectionView == brandsCollectionView
         {
-        case saleCollectionView :
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "salesCell", for: indexPath)
-            return cell
-        case brandsCollectionView :
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "brandsCell", for: indexPath)
-            return cell
-        default:
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "saleCell", for: indexPath)
-            return cell
+        SelectedBrand =  "\(viewModel.productId(at: indexPath))"
+        performSegue(withIdentifier: "showCategoryProducts", sender:  self)
         }
+    }
+    
+    
+    /*===================================================*/
+        //MARK: Segue Functions
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    if segue.identifier == "showCategoryProducts"
+    {
+        let obj = segue.destination as! BrandProductsViewController
+        obj.BrandName = SelectedBrand
+       
+    }
     }
     
 }

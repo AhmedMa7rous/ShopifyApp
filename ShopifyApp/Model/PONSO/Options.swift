@@ -17,13 +17,5 @@ struct Options : Codable {
 		case values = "values"
 	}
 
-	init(from decoder: Decoder) throws {
-		let values = try decoder.container(keyedBy: CodingKeys.self)
-		id = try values.decodeIfPresent(Int.self, forKey: .id)
-		product_id = try values.decodeIfPresent(Int.self, forKey: .product_id)
-		name = try values.decodeIfPresent(String.self, forKey: .name)
-		position = try values.decodeIfPresent(Int.self, forKey: .position)
-		values = try values.decodeIfPresent([String].self, forKey: .values)
-	}
 
 }

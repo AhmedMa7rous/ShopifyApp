@@ -7,17 +7,31 @@
 //
 
 import UIKit
-
+import CoreData
+import SDWebImage
 class FavoriteTableViewController: UITableViewController {
 
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    var favProducts = [Favourite]()
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        fetchFavoriteProducts()
+    }
+    
+    
+    func fetchFavoriteProducts(){
+        do{
+         favProducts = try context.fetch(Favourite.fetchRequest())
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }catch{
+            print(error)
+        }
     }
 
     // MARK: - Table view data source
@@ -29,62 +43,60 @@ class FavoriteTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return favProducts.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "favCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "favCell", for: indexPath) as! FavouriteTableViewCell
 
         // Configure the cell...
-
+        cell.productNameLabel.text = favProducts[indexPath.row].productName
+        cell.productInfoLabel.text = favProducts[indexPath.row].productInfo
+        cell.productImage.sd_setImage(with: URL(string: favProducts[indexPath.row].productImage ?? ""), placeholderImage: UIImage(systemName: "photo"))
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 150
+    }
 
-    /*
+   
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
         return true
     }
-    */
 
-    /*
+
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+        let alert = UIAlertController(title: "", message: "Are you Sure want to delete this item from favourite", preferredStyle: .alert)
+        let doneAction = UIAlertAction(title: "Delete", style: .destructive) { alert in
+            if editingStyle == .delete {
+                self.context.delete(self.favProducts[indexPath.row])
+                self.favProducts.remove(at: indexPath.row)
+                self.save()
+                tableView.deleteRows(at: [indexPath], with: .fade)
+            }
+        }
+        let caneleAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        alert.addAction(caneleAction)
+        alert.addAction(doneAction)
+        
+        present(alert, animated: true, completion: nil)
+       
     }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: false)
+        
     }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
+    
+    func save(){
+        do{
+            try context.save()
+        }catch {
+            print(error.localizedDescription)
+        }
     }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
