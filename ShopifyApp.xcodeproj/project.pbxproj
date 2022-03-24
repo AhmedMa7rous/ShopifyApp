@@ -36,7 +36,6 @@
 		D63BDE3527EB547A0016ACAE /* ShopifyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63BDE3427EB547A0016ACAE /* ShopifyAppTests.swift */; };
 		D63BDE3C27EB5BAA0016ACAE /* NetworkManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63BDE3B27EB5BAA0016ACAE /* NetworkManagerTest.swift */; };
 		D64EBC9D27E3EB720023CF23 /* BrandProductsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64EBC9C27E3EB720023CF23 /* BrandProductsViewModel.swift */; };
-		D696C65B27EC9ED500D5DE9B /* splash.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D696C65A27EC9ED400D5DE9B /* splash.mp4 */; };
 		D6B365C927E4B20E001E6552 /* BrandProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B365C827E4B20E001E6552 /* BrandProductCell.swift */; };
 		EE3F8CC127E26E7400C22F7D /* BrandViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3F8CC027E26E7400C22F7D /* BrandViewModel.swift */; };
 		EE3F8CC327E26EBA00C22F7D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3F8CC227E26EBA00C22F7D /* HomeViewModel.swift */; };
@@ -67,6 +66,7 @@
 		EEB9A90527DF70D500954F9E /* Smart_collections.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB9A90227DF70D500954F9E /* Smart_collections.swift */; };
 		EEB9A90727DF710200954F9E /* CustomCollectionsKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB9A90627DF710200954F9E /* CustomCollectionsKey.swift */; };
 		EEB9A90927DF71E900954F9E /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB9A90827DF71E900954F9E /* NetworkService.swift */; };
+		EED7092227ECA3AC00ECBE53 /* splash.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = EED7092127ECA3AC00ECBE53 /* splash.mp4 */; };
 		EEDD6D0827E0DC570050994B /* ProductDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDD6D0727E0DC570050994B /* ProductDetailsViewController.swift */; };
 		EEFC228127E1591700ADD598 /* BrandProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFC228027E1591700ADD598 /* BrandProductsViewController.swift */; };
 		EEFC228827E162CF00ADD598 /* BrandProductsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFC228627E162CF00ADD598 /* BrandProductsCollectionViewCell.swift */; };
@@ -117,7 +117,6 @@
 		D63BDE3427EB547A0016ACAE /* ShopifyAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopifyAppTests.swift; sourceTree = "<group>"; };
 		D63BDE3B27EB5BAA0016ACAE /* NetworkManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerTest.swift; sourceTree = "<group>"; };
 		D64EBC9C27E3EB720023CF23 /* BrandProductsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BrandProductsViewModel.swift; path = ShopifyApp/View/BrandProductsViewModel.swift; sourceTree = SOURCE_ROOT; };
-		D696C65A27EC9ED400D5DE9B /* splash.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = splash.mp4; path = ../../../splash.mp4; sourceTree = "<group>"; };
 		D6B365C827E4B20E001E6552 /* BrandProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BrandProductCell.swift; path = ShopifyApp/View/BrandProductCell.swift; sourceTree = SOURCE_ROOT; };
 		D7D152988E96CF0D917050DA /* Pods-ShopifyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShopifyApp.release.xcconfig"; path = "Target Support Files/Pods-ShopifyApp/Pods-ShopifyApp.release.xcconfig"; sourceTree = "<group>"; };
 		EE3F8CC027E26E7400C22F7D /* BrandViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BrandViewModel.swift; path = ShopifyApp/BrandViewModel.swift; sourceTree = SOURCE_ROOT; };
@@ -149,6 +148,7 @@
 		EEB9A90227DF70D500954F9E /* Smart_collections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Smart_collections.swift; sourceTree = "<group>"; };
 		EEB9A90627DF710200954F9E /* CustomCollectionsKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionsKey.swift; sourceTree = "<group>"; };
 		EEB9A90827DF71E900954F9E /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		EED7092127ECA3AC00ECBE53 /* splash.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = splash.mp4; sourceTree = "<group>"; };
 		EEDD6D0727E0DC570050994B /* ProductDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewController.swift; sourceTree = "<group>"; };
 		EEFC228027E1591700ADD598 /* BrandProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandProductsViewController.swift; sourceTree = "<group>"; };
 		EEFC228627E162CF00ADD598 /* BrandProductsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandProductsCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -195,7 +195,7 @@
 		4C9035AE27EBEC92003A95AB /* Media */ = {
 			isa = PBXGroup;
 			children = (
-				D696C65A27EC9ED400D5DE9B /* splash.mp4 */,
+				EED7092127ECA3AC00ECBE53 /* splash.mp4 */,
 				B8AD32CE27DA70310032E51B /* Assets.xcassets */,
 			);
 			path = Media;
@@ -504,9 +504,9 @@
 				B8AD32CF27DA70310032E51B /* Assets.xcassets in Resources */,
 				4C60C30D27EBFB8600028365 /* GoogleService-Info.plist in Resources */,
 				76B14F7F27E0F5A300FFA574 /* ProductsCollectionViewCell.xib in Resources */,
+				EED7092227ECA3AC00ECBE53 /* splash.mp4 in Resources */,
 				B8AD32CD27DA70300032E51B /* Main.storyboard in Resources */,
 				EEFC228927E162CF00ADD598 /* BrandProductsCollectionViewCell.xib in Resources */,
-				D696C65B27EC9ED500D5DE9B /* splash.mp4 in Resources */,
 				7657F1C627E7ABC10002E975 /* OrderTableViewCell.xib in Resources */,
 				EE71614727E0E649007189C0 /* PoductsImagesCollectionViewCell.xib in Resources */,
 			);
