@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CategoriesViewController" customModule="ShopifyApp" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicator" destination="WiN-iI-vIv" id="1nA-Wn-TKl"/>
+                <outlet property="categoriesCollectionView" destination="JmD-lo-V4m" id="yh6-J0-Cdo"/>
+                <outlet property="categoryFilterSegmentControl" destination="acQ-sK-Cye" id="2P5-KP-PqE"/>
+                <outlet property="favouriteView" destination="0Ah-jz-dcP" id="Ad1-Iq-BpR"/>
+                <outlet property="favouritesStateLbl" destination="55j-3Q-gkC" id="RUQ-lP-Yy3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="acQ-sK-Cye">
+                    <rect key="frame" x="10" y="54" width="394" height="32"/>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <segments>
+                        <segment title="MEN"/>
+                        <segment title="WOMEN"/>
+                        <segment title="KIDS"/>
+                        <segment title="SALE"/>
+                    </segments>
+                    <connections>
+                        <action selector="categoryFilterSegmentSelected:" destination="-1" eventType="valueChanged" id="WFI-xd-Nvc"/>
+                    </connections>
+                </segmentedControl>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="JmD-lo-V4m">
+                    <rect key="frame" x="10" y="95" width="394" height="757"/>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rsD-XC-Vxc">
+                        <size key="itemSize" width="100" height="130"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
+                    </collectionViewFlowLayout>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </collectionView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Ah-jz-dcP">
+                    <rect key="frame" x="30" y="762" width="354" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Added To Favourites!" textAlignment="center" lineBreakMode="wordWrap" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="55j-3Q-gkC">
+                            <rect key="frame" x="0.0" y="-5" width="354" height="60"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="eia-Kt-YO0"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.25960427520000001" green="0.2611998022" blue="0.25120365620000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="55j-3Q-gkC" secondAttribute="trailing" id="Cwf-OH-Jnt"/>
+                        <constraint firstItem="55j-3Q-gkC" firstAttribute="leading" secondItem="0Ah-jz-dcP" secondAttribute="leading" id="EVE-K7-UhH"/>
+                        <constraint firstAttribute="height" constant="50" id="NIi-jU-C9M"/>
+                        <constraint firstItem="55j-3Q-gkC" firstAttribute="centerY" secondItem="0Ah-jz-dcP" secondAttribute="centerY" id="UFi-LW-e28"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="WiN-iI-vIv">
+                    <rect key="frame" x="182" y="448.5" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="rSe-PR-eV0"/>
+                        <constraint firstAttribute="height" constant="50" id="u05-FV-UeW"/>
+                    </constraints>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="acQ-sK-Cye" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="0AC-tK-BLz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="acQ-sK-Cye" secondAttribute="trailing" constant="10" id="4Ub-wp-610"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="0Ah-jz-dcP" secondAttribute="bottom" constant="50" id="AZM-v4-w06"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0Ah-jz-dcP" secondAttribute="trailing" constant="30" id="FrY-cH-4de"/>
+                <constraint firstItem="JmD-lo-V4m" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="SuN-g8-Wio"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="JmD-lo-V4m" secondAttribute="bottom" constant="10" id="WDQ-ji-wlY"/>
+                <constraint firstItem="WiN-iI-vIv" firstAttribute="centerX" secondItem="JmD-lo-V4m" secondAttribute="centerX" id="WTQ-T1-dxA"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="JmD-lo-V4m" secondAttribute="trailing" constant="10" id="XAT-6d-z9V"/>
+                <constraint firstItem="0Ah-jz-dcP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="cNi-sE-quZ"/>
+                <constraint firstItem="JmD-lo-V4m" firstAttribute="top" secondItem="acQ-sK-Cye" secondAttribute="bottom" constant="10" id="fKM-4n-7rR"/>
+                <constraint firstItem="WiN-iI-vIv" firstAttribute="centerY" secondItem="JmD-lo-V4m" secondAttribute="centerY" id="rJ1-Du-5Zo"/>
+                <constraint firstItem="acQ-sK-Cye" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="wTz-DP-UfP"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="99" y="120"/>
+        </view>
+    </objects>
+</document>
