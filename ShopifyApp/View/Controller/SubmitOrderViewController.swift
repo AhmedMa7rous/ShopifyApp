@@ -73,7 +73,7 @@ class SubmitOrderViewController: UIViewController {
                 ordered.orderPrice = "\(grandTotal)"
                 ordered.numberOfProducts = num
                 ordered.orderStatus = "ordered"
-                ordered.orderedDate = "23/3/2022 08:30PM"
+                ordered.orderedDate = "24/3/2022 05:30PM"
                 ordered.shippedDate = "29/3/2022 08:00AM"
                 
                 do {

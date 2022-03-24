@@ -32,16 +32,18 @@ class CategoryViewController: UIViewController {
         switch segmentedControl.selectedSegmentIndex
         {
         case 0:
-            self.fetchProductsWithIB(collection_id: "268946243636")
+            self.initVM()
         case 1:
             self.fetchProductsWithIB(collection_id: "269278806068")
         case 2:
             self.fetchProductsWithIB(collection_id: "269278904372")
         case 3:
             self.fetchProductsWithIB(collection_id: "269278838836")
-            
+        case 4:
+            self.fetchProductsWithIB(collection_id: "268946243636")
             
         default:
+            self.initVM()
             break
         }
     }

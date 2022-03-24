@@ -61,7 +61,7 @@ class LogUpViewController: UIViewController {
                 } else {
                     // User was created successfully, so now store the fisrtName and lastName.
                     let db = Firestore.firestore()
-                    db.collection("users").addDocument(data: ["firstName": firstName, "lastName": lastName, "uid": result!.user.uid]) { (error) in
+                    db.collection("users").document(result!.user.uid).setData(["firstName": firstName, "lastName": lastName, "uid": result!.user.uid]) { (error) in
                         if error != nil {
                             // Show error message
                             self.sendAlert(error!.localizedDescription)
