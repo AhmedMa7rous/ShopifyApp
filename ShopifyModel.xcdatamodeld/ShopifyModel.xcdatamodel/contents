@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21E230" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CartedProducts" representedClassName="CartedProducts" syncable="YES" codeGenerationType="class">
+        <attribute name="numberOfProducts" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="productID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="productImage" optional="YES" attributeType="String"/>
+        <attribute name="productInfo" optional="YES" attributeType="String"/>
+        <attribute name="productName" optional="YES" attributeType="String"/>
+        <attribute name="productPrice" optional="YES" attributeType="String"/>
+        <attribute name="productStatus" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Favourite" representedClassName="Favourite" syncable="YES" codeGenerationType="class">
+        <attribute name="price" optional="YES" attributeType="String"/>
+        <attribute name="productID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="productImage" optional="YES" attributeType="String"/>
+        <attribute name="productInfo" optional="YES" attributeType="String"/>
+        <attribute name="productName" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="OrderedProduct" representedClassName="OrderedProduct" syncable="YES" codeGenerationType="class">
+        <attribute name="numberOfProducts" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="orderedDate" optional="YES" attributeType="String"/>
+        <attribute name="orderInfo" optional="YES" attributeType="String"/>
+        <attribute name="orderPrice" optional="YES" attributeType="String"/>
+        <attribute name="orderProducts" optional="YES" attributeType="String"/>
+        <attribute name="orderStatus" optional="YES" attributeType="String"/>
+        <attribute name="shippedDate" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="CartedProducts" positionX="-63" positionY="18" width="128" height="134"/>
+        <element name="Favourite" positionX="-63" positionY="-18" width="128" height="104"/>
+        <element name="OrderedProduct" positionX="-63" positionY="54" width="128" height="134"/>
+    </elements>
+</model>
